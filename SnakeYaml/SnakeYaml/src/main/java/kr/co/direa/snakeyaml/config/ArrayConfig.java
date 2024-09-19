@@ -1,20 +1,20 @@
-package com.example.yaml.config;
-
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+package kr.co.direa.snakeyaml.config;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * application.yml
- * array-config �׽�Ʈ
+ * array-config 테스트
  */
 @Getter
 @Setter
-@Configuration
 @ConfigurationProperties(prefix = "array-config")
 public class ArrayConfig {
     private List<String> servers1 = new ArrayList<>();

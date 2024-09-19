@@ -1,17 +1,17 @@
-package com.example.yaml.config;
+package kr.co.direa.snakeyaml.config;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * application.yml
- * single-config �׽�Ʈ
+ * single-config 테스트
  */
 @Getter
 @Setter
-@Configuration
 @ConfigurationProperties(prefix = "single-config")
 public class SingleConfig {
     private String config_string;

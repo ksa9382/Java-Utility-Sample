@@ -1,16 +1,16 @@
-package com.example.yaml.config;
+package kr.co.direa.snakeyaml.config;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
- * classpath:/root_config.yml¿¡ ÀÖ´Â ¿¤¸®¸ÕÆ®¸¦ DI¹ŞÀ½
+ * classpath:/root_config.ymlì— ìˆëŠ” ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ DIë°›ìŒ
  */
 @Setter
 @Getter
-@Configuration
 @ConfigurationProperties(prefix = "root")
 public class RootDepthConfig {
     private String config1;

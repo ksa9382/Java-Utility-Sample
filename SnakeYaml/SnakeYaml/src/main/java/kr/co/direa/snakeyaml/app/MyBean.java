@@ -1,18 +1,19 @@
-package com.example.yaml.app;
+package kr.co.direa.snakeyaml.app;
 
-import com.example.yaml.config.ArrayConfig;
-import com.example.yaml.config.Depth1Config;
-import com.example.yaml.config.RootDepthConfig;
-import com.example.yaml.config.SingleConfig;
+import org.springframework.stereotype.Component;
+
 import jakarta.annotation.PostConstruct;
+import kr.co.direa.snakeyaml.config.ArrayConfig;
+import kr.co.direa.snakeyaml.config.Depth1Config;
+import kr.co.direa.snakeyaml.config.RootDepthConfig;
+import kr.co.direa.snakeyaml.config.SingleConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
 @Component
 @Slf4j
-public class MyApp {
+public class MyBean {
     private final ArrayConfig arrayConfig;
     private final SingleConfig singleConfig;
     private final RootDepthConfig rootDepthConfig;
