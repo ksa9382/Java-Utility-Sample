@@ -1,0 +1,20 @@
+# ====== Single Element ======
+# === String ===
+single-config:
+  config_string: config1-value
+  config_int: 1
+  config_double: 0.5
+  config_boolean: true
+
+# ====== Array Element ======
+array-config:
+  servers1:
+    - dev.example.com
+    - another.example.com
+  servers2: [example.org, dev.example.com, another.example.com]
+
+spring:
+  config:
+    import:
+     - classpath:/root_config.yml
+     - classpath:/depth1/depth1_config.yml
